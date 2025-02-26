@@ -1,0 +1,31 @@
+<p>table works!</p>
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">id</th>
+        <th scope="col">age</th>
+        <th scope="col">email</th>
+        <th scope="col">salary</th>
+      </tr>
+    </thead>
+    <tbody>
+        @for(item of datalist; track $index){
+      <tr>
+        <th scope="row">{{item.id}}</th>
+        <td>{{item.age}}</td>
+        <td>{{item.email}}</td>
+        <td>{{item.salary}}</td>
+      </tr>}
+      <tr>
+        <th scope="row">2</th>
+        <td>Jacob</td>
+        <td>Thornton</td>
+        <td>fat</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td colspan="2">Larry the Bird</td>
+        <td>twitter</td>
+      </tr>
+    </tbody>
+  </table>
